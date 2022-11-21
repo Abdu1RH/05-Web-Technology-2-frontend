@@ -1,3 +1,9 @@
+.spot_id{
+    font-weight: bold;
+    font-size: large;
+}
+
+
 .address {
     color: green;
 }
@@ -8,7 +14,10 @@ ul {
     margin: 0; /* Remove margins */
 }
 
+/*
 li {
     border: 1px solid black;
-    margin-bottom: 12px;
+    margin-bottom: 100px;
+    border-radius: 10px;
 }
+ */
