@@ -1,4 +1,4 @@
-fetch("https://igspots.onrender.com/spots")
+ fetch("https://igspots.onrender.com/spots")
     .then(response => response.json())
     .then(function (spots) {
         renderSpots(spots);
@@ -85,7 +85,6 @@ function renderImages(images) {
     }
 
 }
-
 
 
 
