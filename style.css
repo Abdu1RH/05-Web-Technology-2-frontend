@@ -26,8 +26,14 @@ li {
  */
 
 #kalkgraven {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 150px;
+    justify-content: space-around;
+    align-content: center;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+}
 }
