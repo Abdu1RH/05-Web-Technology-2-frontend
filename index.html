@@ -6,14 +6,28 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
     <title>IG Spots</title>
 </head>
 <body>
-<img id="kalkgraven"
-     src="https://discoverdenmark.dk/Media/Locations/66929543-0752-40d1-b0fb-6540f070f53c/a74c1b46-8890-4f10-9589-0730855333d7.png"
-     alt="billede af kalkgraven">
+<div class="container">
+    <div class="image-container">
+        <img src="https://discoverdenmark.dk/Media/Locations/66929543-0752-40d1-b0fb-6540f070f53c/a74c1b46-8890-4f10-9589-0730855333d7.png" alt=""/>
+        <span>
+                <h1>Kalkgraven</h1>
+                <p>
+                    Karlstrup Kalkgrav, 2690 Karlslunde
+                    55°32'53.1.N
+                    12°12'24.0,E
+                </p>
+            </span>
+    </div>
+</div>
 <h1>Find your Instagram spots in Denmark</h1>
-
+<input placeholder="Input season e.g. Summer" type="text">
+<button class="filter">Filter by season</button>
 <ul id="spots"></ul>
 <br>
 <ul id ="users"></ul>
