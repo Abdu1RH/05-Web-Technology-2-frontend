@@ -42,6 +42,8 @@ function renderSpots(spots) {
 }
 
 
+
+
     // lave et loop
     // create element
 
@@ -136,5 +138,30 @@ function renderImages(images) {
 
 
 
+ fetch("https://igspots.onrender.com/user_rating")
+     .then(response => response.json())
+     .then(function (userRatings) {
+         renderuserRating(userRatings);
+     });
+
+ function renderuserRating(userRatings) {
+     console.log(userRatings);
+     const ul = document.querySelector('ul#user_ratings');
+     console.log(ul);
+     for (let i = 0; i < userRatings.length; i++) {
+         const userRating = userRatings[i];
+         console.log(userRating);
+         const li = document.createElement('li');
+         li.innerHTML = `
+            <p class="user_id">${userRating.user_id}</p>
+            <p class="rating_score">${userRating.rating_score}</p>
+            <p class="spot_id">${userRating.spot_id}</p>
+            <p class="location_name">${userRating.location_name}</p>
+        `;
+         ul.appendChild(li);
+     }
+
+
+}
 
 
