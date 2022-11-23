@@ -2,11 +2,8 @@
     .then(response => response.json())
     .then(function (spots) {
         renderSpots(spots);
-
-
-
-
     });
+
 
 function renderSpots(spots) {
     console.log(spots);
