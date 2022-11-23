@@ -114,3 +114,24 @@ body {
     background-color: whitesmoke;
 
 }
+
+#header{
+    background: linear-gradient(#515BD4, #8134AF,#DD2A7B,#FEDA77,#F58529);
+}
+
+#seasonFilter{
+    align-content: flex-end;
+}
+
+#headerh1{
+    text-align: center;
+}
+
+
+#logo{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+
+}
