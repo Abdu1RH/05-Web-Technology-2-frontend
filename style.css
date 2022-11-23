@@ -14,7 +14,7 @@ ul {
 }
 
 
-
+/*
 li {
     border: 1px solid black;
     margin-bottom: 100px;
@@ -29,6 +29,7 @@ li {
     width: 250px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+ */
 
 * {
     margin: 0;
@@ -115,23 +116,42 @@ body {
 
 }
 
-#header{
+#divHeader{
     background: linear-gradient(#515BD4, #8134AF,#DD2A7B,#FEDA77,#F58529);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding: 5px;
+    float: top;
+    position: relative;
+
 }
 
-#seasonFilter{
-    align-content: flex-end;
+#filterbarSeasons{
+    float: right;
+
 }
 
 #headerh1{
     text-align: center;
+    color: black;
+    font-weight: bolder;
+
 }
 
 
 #logo{
-    border: 1px solid #ddd;
     border-radius: 4px;
-    padding: 5px;
-    width: 150px;
+    padding: 10px;
+    width: 80px;
+    float: top;
+    position: relative;
 
+}
+
+.filter{
+    background:linear-gradient(#515BD4, #8134AF,#DD2A7B,#FEDA77,#F58529);
+    color: black;
+    padding: 2px 20px;
+    font-weight: bolder;
+    font-size: 13px;
 }
