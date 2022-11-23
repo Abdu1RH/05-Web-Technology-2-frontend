@@ -79,11 +79,11 @@ span {
 }
 
 span h1 {
-    color: lightblue;
+    color: white;
 }
 
 span p {
-    color: lightblue;
+    color: white;
 }
 
 .image-container::after{
@@ -111,6 +111,6 @@ span p {
 }
 
 body {
-    background-color: lightcyan;
+    background-color: whitesmoke;
 
 }
