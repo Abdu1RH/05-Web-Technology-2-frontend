@@ -13,20 +13,39 @@ function renderSpots(spots) {
         const spot = spots[i];
         console.log(spot);
         const li = document.createElement('li');
-        li.innerHTML = `
-            <p class="spot_id">${spot.spot_id}</p>
+
+        /*
+        <p class="spot_id">${spot.spot_id}</p>
             <p class="location_name">${spot.location_name}</p>
             <p class="address">${spot.address}</p>
-            <p class="longtitude">${spot.longitude}</p> 
+            <p class="longtitude">${spot.longitude}</p>
             <p class="latitude">${spot.latitude}</p>
+         */
+        li.innerHTML = `
+            
+      
+    <div class="container">
+    <div class="image-container">
+        <img src="https://discoverdenmark.dk/Media/Locations/66929543-0752-40d1-b0fb-6540f070f53c/a74c1b46-8890-4f10-9589-0730855333d7.png" alt=""/>
+        <span>
+                <h1>${spot.location_name}</h1>
+                <p>
+                ${spot.address}
+                ${spot.longitude}
+                ${spot.latitude}
+                </p>
+            </span>
+    </div>
         `;
         ul.appendChild(li);
     }
+}
+
 
     // lave et loop
     // create element
 
-}
+
  /*
  fetch("https://igspots.onrender.com/users")
      .then(response => response.json())
