@@ -153,10 +153,11 @@ function renderImages(images) {
          console.log(userRating);
          const li = document.createElement('li');
          li.innerHTML = `
+            <p class="location_name">${userRating.location_name}</p>
+            <p class="spot_id">${userRating.spot_id}</p>
             <p class="user_id">${userRating.user_id}</p>
             <p class="rating_score">${userRating.rating_score}</p>
-            <p class="spot_id">${userRating.spot_id}</p>
-            <p class="location_name">${userRating.location_name}</p>
+         
         `;
          ul.appendChild(li);
      }
