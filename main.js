@@ -34,6 +34,7 @@ function renderSpots(spots) {
                 ${spot.address}
                 <br>
                 ${spot.season}
+               
                 </p>
             </span>
             
@@ -101,10 +102,8 @@ function renderImages(images) {
         const li = document.createElement('li');
         li.innerHTML = `
             <p class="img_id">${image.img_id}</p>
-            <p class="season">${image.season}</p>
-            <p class="angle">${image.angle}</p>
-            <p class="tag">${image.tag}</p>
-        `;
+            <p class="img_link">${image.img_link}</p>
+            `;
         ul.appendChild(li);
     }
 
@@ -140,25 +139,24 @@ function renderImages(images) {
 
 
 
- fetch("https://igspots.onrender.com/user_rating")
+ fetch("https://igspots.onrender.com/user_spot")
      .then(response => response.json())
-     .then(function (userRatings) {
-         renderuserRating(userRatings);
+     .then(function (users) {
+         renderUsers(users);
      });
 
- function renderuserRating(userRatings) {
-     console.log(userRatings);
+ function renderUsers(users) {
+     console.log(users);
      const ul = document.querySelector('ul#user_ratings');
      console.log(ul);
-     for (let i = 0; i < userRatings.length; i++) {
-         const userRating = userRatings[i];
-         console.log(userRating);
+     for (let i = 0; i < users.length; i++) {
+         const user = users[i];
+         console.log(user);
          const li = document.createElement('li');
          li.innerHTML = `
-            <p class="location_name">${userRating.location_name}</p>
-            <p class="spot_id">${userRating.spot_id}</p>
-            <p class="user_id">${userRating.user_id}</p>
-            <p class="rating_score">${userRating.rating_score}</p>
+            <p class="user_id">${user.user_id}</p>
+            <p class="spot_id">${user.spot_id}</p>
+           
          
         `;
          ul.appendChild(li);
