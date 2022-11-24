@@ -7,12 +7,12 @@
 
 function renderSpots(spots) {
     console.log(spots);
-    const ul = document.querySelector('ul#spots');
+    const ul = document.querySelector('#spots');
     console.log(ul);
     for (let i = 0; i < spots.length; i++) {
         const spot = spots[i];
         console.log(spot);
-        const li = document.createElement('li');
+        const li = document.createElement('div');
 
         /*
         <p class="spot_id">${spot.spot_id}</p>
@@ -24,9 +24,8 @@ function renderSpots(spots) {
         li.innerHTML = `
             
       
-    <div class="container">
-    <div class="image-container">
-        <img src="https://discoverdenmark.dk/Media/Locations/66929543-0752-40d1-b0fb-6540f070f53c/a74c1b46-8890-4f10-9589-0730855333d7.png" alt=""/>
+       <div class="image-container">
+        <img src="${spot.img_link}" alt=""/>
         <span>
                 <p> ${spot.spot_id}</p>
                 <h1>${spot.location_name}</h1>
@@ -34,11 +33,13 @@ function renderSpots(spots) {
                 ${spot.address}
                 <br>
                 ${spot.season}
-               
-                </p>
-            </span>
+                
+               </p>
+               </span>
             
     </div>
+    
+     </div>
         `;
         ul.appendChild(li);
     }
@@ -52,7 +53,7 @@ function renderSpots(spots) {
 
 
  /*
- fetch("https://igspots.onrender.com/users")
+ fetch("https://igspots.onrender.com/user_spot")
      .then(response => response.json())
      .then(function (users) {
          renderUsers(users);
@@ -70,16 +71,26 @@ function renderSpots(spots) {
          console.log(user);
          const li = document.createElement('li');
          li.innerHTML = `
+
+    <div class="image-container">
+        <img src="${spot.img_link}" alt=""/>
+        <span>
              <p class="user_id">${user.user_id}</p>
              <p class="user_name">${user.user_name}</p>
              <p class="email">${user.email}</p>
              <p class="user_password">${user.user_password}</p>
+         </span>
+
+    </div>
+
          `;
          ul.appendChild(li);
      }
 
  }
   */
+
+ /*
 
 fetch("https://igspots.onrender.com/images")
     .then(response => response.json())
@@ -138,7 +149,7 @@ function renderImages(images) {
 
 
 
-
+/*
  fetch("https://igspots.onrender.com/user_spot")
      .then(response => response.json())
      .then(function (users) {
@@ -165,4 +176,5 @@ function renderImages(images) {
 
 }
 
+ */
 
