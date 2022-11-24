@@ -28,13 +28,15 @@ function renderSpots(spots) {
     <div class="image-container">
         <img src="https://discoverdenmark.dk/Media/Locations/66929543-0752-40d1-b0fb-6540f070f53c/a74c1b46-8890-4f10-9589-0730855333d7.png" alt=""/>
         <span>
+                <p> ${spot.spot_id}</p>
                 <h1>${spot.location_name}</h1>
                 <p>
                 ${spot.address}
-                ${spot.longitude}
-                ${spot.latitude}
+                <br>
+                ${spot.season}
                 </p>
             </span>
+            
     </div>
         `;
         ul.appendChild(li);
