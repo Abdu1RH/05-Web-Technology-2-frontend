@@ -184,6 +184,7 @@ function renderImages(images) {
  function renderUsers(userSpots) {
      console.log(userSpots);
      const ul = document.querySelector('ul#user_spots');
+     ul.innerHTML = ""
      console.log(ul);
      for (let i = 0; i < userSpots.length; i++) {
          const user = userSpots[i];
