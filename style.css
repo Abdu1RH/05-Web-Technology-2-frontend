@@ -47,7 +47,16 @@ Image container css inspired by https://www.youtube.com/watch?v=zWg_YpxabKA&ab_c
  */
 
 
-.container {
+.container1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    align-items: flex-start;
+}
+
+.container2 {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -68,12 +77,26 @@ Image container css inspired by https://www.youtube.com/watch?v=zWg_YpxabKA&ab_c
     transition: all 0.8s ease-in-out;
 }
 
+.image-container-users {
+    position: relative;
+    margin: 20px;
+    width: 450px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.8s ease-in-out;
+}
+
+
 img {
     position: absolute;
     width: 100%;
     transform: scale(1);
     transition: transform 1s ease-in-out;
 }
+
 
 span {
     position: absolute;
@@ -85,18 +108,22 @@ span {
     transition: transform 0.6s ease-in-out;
 }
 
+
 span h1 {
     color: white;
 }
+
 
 span p {
     color: white;
 }
 
+
 p1 {
     font-weight: bolder;
     color: white;
 }
+
 
 .image-container::after{
     content: "";
@@ -106,26 +133,60 @@ p1 {
     transform: scale(1);
 }
 
+
+.image-container-users::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    transform: scale(1);
+}
+
+
 .image-container:hover > span {
     transform: translateY(0);
 }
+
+
+.image-container-users:hover > span {
+    transform: translateY(0);
+}
+
 
 .image-container:hover:after {
     opacity: 1;
 }
 
+
+.image-container-users:hover:after {
+    opacity: 1;
+}
+
+
 .image-container:hover > img {
     transform: scale(1.2);
 }
+
+
+.image-container-users:hover > img {
+    transform: scale(1.2);
+}
+
 
 .image-container:hover {
     transform: translateY(-10px) scale(1.1);
 }
 
+
+.image-container-users:hover {
+    transform: translateY(-10px) scale(1.1);
+}
+
+
 body {
     background-color: whitesmoke;
-
 }
+
 
 #divHeader{
     background: linear-gradient(#515BD4, #8134AF,#DD2A7B,#FEDA77,#F58529);
@@ -134,19 +195,18 @@ body {
     padding: 5px;
     float: top;
     position: relative;
-
 }
+
 
 #filterbarSeasons{
     float: right;
-
 }
+
 
 #headerh1{
     text-align: center;
     color: black;
     font-weight: bolder;
-
 }
 
 

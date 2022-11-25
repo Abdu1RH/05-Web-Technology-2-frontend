@@ -26,8 +26,8 @@ function renderSpots(spots) {
         li.innerHTML = `
             
       
-       <div class="image-container">
-        <img src="${spot.img_link}" alt=""/>
+<div class="image-container">
+    <img src="${spot.img_link}" alt=""/>
         <span>
                 <p> ${spot.spot_id}</p>
                 <h1>${spot.location_name}</h1>
@@ -35,13 +35,10 @@ function renderSpots(spots) {
                 ${spot.address}
                 <br>
                 ${spot.season}
-                
                </p>
-               </span>
-            
-    </div>
-    
-     </div>
+        </span>    
+    </div>   
+</div>
         `;
         ul.appendChild(li);
     }
@@ -177,25 +174,36 @@ function renderImages(images) {
   */
 
 
-/*
+
  fetch("https://igspots.onrender.com/user_spot")
      .then(response => response.json())
-     .then(function (users) {
-         renderUsers(users);
+     .then(function (userSpots) {
+         renderUsers(userSpots);
      });
 
- function renderUsers(users) {
-     console.log(users);
-     const ul = document.querySelector('ul#user_ratings');
+ function renderUsers(userSpots) {
+     console.log(userSpots);
+     const ul = document.querySelector('ul#user_spots');
      console.log(ul);
-     for (let i = 0; i < users.length; i++) {
-         const user = users[i];
+     for (let i = 0; i < userSpots.length; i++) {
+         const user = userSpots[i];
          console.log(user);
          const li = document.createElement('li');
          li.innerHTML = `
-            <p class="user_id">${user.user_id}</p>
-            <p class="spot_id">${user.spot_id}</p>
-           
+
+<div class="image-container-users">
+    <img src="${user.img_link}" alt=""/>
+        <span>
+                <p> ${user.spot_id}</p>
+                <h1>${user.location_name}</h1>
+                <p>
+                ${user.user_name}
+                <br>
+                ${user.user_mail}
+               </p>
+        </span>    
+    </div>   
+</div>
          
         `;
          ul.appendChild(li);
@@ -204,5 +212,5 @@ function renderImages(images) {
 
 }
 
- */
+
 
