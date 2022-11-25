@@ -101,7 +101,7 @@ img {
 span {
     position: absolute;
     bottom: 0;
-    padding: 2rem;
+    padding: 4rem;
     z-index: 999;
     background: linear-gradient(#0000, #121212);
     transform: translateY(250px);
@@ -232,4 +232,10 @@ body {
     background-color: darkslategrey;
     color: white;
 
+}
+
+#spotsH1 {
+    text-align: center;
+    color: black;
+    font-weight: bolder;
 }
