@@ -3,33 +3,17 @@
     font-size: large;
 }
 
+
 .address {
     color: green;
 }
 
+
 ul {
     list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins */
+
 }
 
-
-/*
-li {
-    border: 1px solid black;
-    margin-bottom: 100px;
-    border-radius: 10px;
-}
-
-
-#kalkgraven {
-    justify-content: space-around;
-    align-content: center;
-    border-radius: 8px;
-    width: 250px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
- */
 
 * {
     margin: 0;
@@ -37,15 +21,16 @@ li {
     box-sizing: border-box;
 }
 
+
 body {
     background: #fff;
     font-family: 'Roboto', sans-serif;
 }
 
+
 /*
 Image container css inspired by https://www.youtube.com/watch?v=zWg_YpxabKA&ab_channel=ShreyashCodes
  */
-
 
 .container {
     width: 100%;
@@ -56,6 +41,7 @@ Image container css inspired by https://www.youtube.com/watch?v=zWg_YpxabKA&ab_c
     align-items: flex-start;
 }
 
+
 #user_spots {
     width: 100%;
     display: flex;
@@ -64,6 +50,7 @@ Image container css inspired by https://www.youtube.com/watch?v=zWg_YpxabKA&ab_c
     align-items: baseline;
     align-items: flex-start;
 }
+
 
 .image-container {
     position: relative;
@@ -76,6 +63,7 @@ Image container css inspired by https://www.youtube.com/watch?v=zWg_YpxabKA&ab_c
     transform: scale(1);
     transition: all 0.8s ease-in-out;
 }
+
 
 .image-container-users {
     position: relative;
@@ -219,6 +207,7 @@ body {
 
 }
 
+
 .filter{
     background: white;
     color: black;
@@ -231,8 +220,8 @@ body {
 #divFooter{
     background-color: darkslategrey;
     color: white;
-
 }
+
 
 #spotsH1 {
     text-align: center;
