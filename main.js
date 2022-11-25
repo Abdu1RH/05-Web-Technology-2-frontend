@@ -2,12 +2,14 @@
     .then(response => response.json())
     .then(function (spots) {
         renderSpots(spots);
+        filterSeasons(spots);
     });
 
 
 function renderSpots(spots) {
     console.log(spots);
     const ul = document.querySelector('#spots');
+    ul.innerHTML = ""
     console.log(ul);
     for (let i = 0; i < spots.length; i++) {
         const spot = spots[i];
@@ -44,7 +46,30 @@ function renderSpots(spots) {
         ul.appendChild(li);
     }
 }
-
+ function filterSeasons(spots) {
+     console.log(spots);
+     const button = document.querySelector('button.filter');
+     console.log(button);
+     button.addEventListener("click", function () {
+         console.log("button clicked");
+         const inputElement = document.querySelector('input');
+         console.log(inputElement);
+         const filteredSeason = inputElement.value;
+         console.log(filteredSeason);
+         const seasonFiltered = [];
+         console.log(seasonFiltered)
+         for (let i = 0; i < spots.length; i++) {
+             const spot = spots[i];
+             console.log(spot.season);
+             console.log(filteredSeason);
+             console.log(spot.season === filteredSeason);
+             if ((spot.season) === (filteredSeason)) {
+                 seasonFiltered.push(spot);
+             }
+         }
+         renderSpots(seasonFiltered)
+     })
+ }
 
 
 
@@ -90,8 +115,8 @@ function renderSpots(spots) {
  }
   */
 
- /*
 
+/*
 fetch("https://igspots.onrender.com/images")
     .then(response => response.json())
     .then(function (images) {
@@ -119,7 +144,9 @@ function renderImages(images) {
     }
 
 }
+ */
 
+ /*
  function filterSeasons(images) {
      console.log(images);
      const button = document.querySelector('button.filter');
@@ -147,6 +174,7 @@ function renderImages(images) {
 
  }
 
+  */
 
 
 /*

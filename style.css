@@ -42,6 +42,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/*
+Image container css inspired by https://www.youtube.com/watch?v=zWg_YpxabKA&ab_channel=ShreyashCodes
+ */
+
+
 .container {
     width: 100%;
     display: flex;
@@ -155,9 +160,9 @@ body {
 }
 
 .filter{
-    background:linear-gradient(#515BD4, #8134AF,#DD2A7B,#FEDA77,#F58529);
+    background: white;
     color: black;
-    padding: 2px 20px;
+    padding: 1px 12px;
     font-weight: bolder;
     font-size: 13px;
 }
